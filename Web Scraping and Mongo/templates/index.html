@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/slate/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <br>
+      <div class="jumbotron text-center">
+        <h1>Mission to Mars</h1>
+      <div>
+        <ul class="text-center" style="list-style: none;">
+            {% for mars in four_pics %}
+            <li class='list-group-item'>
+              <a href="{{mars.featured_image_link}}">{{ mars.title }}: {{ listing.link_ready }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
